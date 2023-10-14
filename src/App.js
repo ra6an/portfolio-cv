@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useContext } from "react";
-import { Routes, Route, useLocation } from "react-router-dom";
+import { MemoryRouter, Routes, Route, useLocation } from "react-router-dom";
 
 import styles from "./App.module.css";
 
@@ -12,6 +12,7 @@ import Loading from "./UI/Loading";
 // STORE
 import OverlayContext from "./store/OverlayContext";
 import CertImages from "./components/about-me/CertImages";
+import PageNotFound from "./UI/PageNotFound";
 
 // LAZY LOAD PAGES
 const LazyAboutMe = React.lazy(() => import("./pages/AboutMe"));
@@ -100,33 +101,37 @@ function App() {
       />
       {overlayData.active && <CertImages />}
       <div className={styles["body"]}>
-        <Routes basename="/">
-          <Route path="/" element={<Loading />} />
-          <Route
-            path="/about-me"
-            element={
-              <React.Suspense fallback={<Loading />}>
-                <LazyAboutMe data={{ setPath: setPath }} />
-              </React.Suspense>
-            }
-          />
-          <Route
-            path="/projects"
-            element={
-              <React.Suspense fallback={<Loading />}>
-                <LazyProjects scrWidth={scrWidth} />
-              </React.Suspense>
-            }
-          />
-          <Route
-            path="/contact"
-            element={
-              <React.Suspense fallback={<Loading />}>
-                <LazyContact />
-              </React.Suspense>
-            }
-          />
-        </Routes>
+        <MemoryRouter basename="/r6">
+          <Routes>
+            {/* <Routes basename="/"> */}
+            {/* <Route path="*" element={<p>page not found</p>} /> */}
+            <Route path="/" element={<Loading />} />
+            <Route
+              path="/about-me"
+              element={
+                <React.Suspense fallback={<Loading />}>
+                  <LazyAboutMe data={{ setPath: setPath }} />
+                </React.Suspense>
+              }
+            />
+            <Route
+              path="/projects"
+              element={
+                <React.Suspense fallback={<Loading />}>
+                  <LazyProjects scrWidth={scrWidth} />
+                </React.Suspense>
+              }
+            />
+            <Route
+              path="/contact"
+              element={
+                <React.Suspense fallback={<Loading />}>
+                  <LazyContact />
+                </React.Suspense>
+              }
+            />
+          </Routes>
+        </MemoryRouter>
       </div>
     </div>
   );
