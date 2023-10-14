@@ -8,7 +8,14 @@ import logoGreenImg from "../images/Rgreen.png";
 
 const Loading = (props) => {
   return (
-    <div className={styles.container}>
+    <div
+      className={styles.container}
+      style={
+        props.scrWidth > 1200
+          ? { height: "calc(100% - 10rem)", marginTop: "10rem" }
+          : { height: "calc(100% - 8rem)", marginTop: "8rem" }
+      }
+    >
       <div className={styles["container-green"]}>
         <img
           alt="Green logo"
