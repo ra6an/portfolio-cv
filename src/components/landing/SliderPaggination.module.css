@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  z-index: 50;
+}
+
+.dot-inactive {
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 10rem;
+  transform: translateY(2rem);
+  border: 0.2rem solid black;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.dot-active {
+  width: 4rem;
+  height: 0.8rem;
+  border-radius: 10rem;
+  border: 0.2rem solid black;
+  transform: translateY(2rem);
+  transition: all 0.3s;
+}

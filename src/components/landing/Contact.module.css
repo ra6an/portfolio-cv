@@ -1,0 +1,88 @@
+.contact-body {
+  width: 85%;
+  justify-self: center;
+  height: 100%;
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-right: 4rem;
+  margin-bottom: 2rem;
+}
+
+.contact-middle {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.contact-middle--text {
+  font-family: "Dosis", sans-serif;
+  font-size: 2.4rem;
+  font-weight: 400;
+  letter-spacing: 0.2rem;
+}
+
+.email {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.phone {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  height: 3rem;
+  width: 3rem;
+}
+
+.contact-text {
+  text-decoration: none;
+  color: #333;
+  font-family: "Dosis", sans-serif;
+  font-size: 2.2rem;
+  font-weight: 400;
+  letter-spacing: 0.2rem;
+  transition: all 0.5s;
+}
+
+.contact-text:hover {
+  color: black;
+}
+
+/* MEDIA QUERIES */
+/* 1500 */
+@media (max-width: 93.75em) {
+  .contact-text {
+    font-size: 2rem;
+  }
+}
+/* 550 */
+@media (max-width: 34.4em) {
+  .contact-body {
+    margin-right: 0;
+  }
+}
+/* 360 */
+@media (max-width: 22.5em) {
+  .contact-text {
+    font-size: 1.6rem;
+  }
+}
+/* 300 */
+@media (max-width: 18.75em) {
+  .contact-text {
+    font-size: 1.4rem;
+  }
+}

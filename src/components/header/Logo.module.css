@@ -1,0 +1,46 @@
+.container {
+  height: 100%;
+  width: 10rem;
+  background-color: var(--white-t);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: all 1s;
+}
+
+.image-absolute {
+  position: absolute;
+  height: 120%;
+  background-size: cover;
+  transform: translateY(20%);
+}
+
+.img-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.image {
+  height: 120%;
+  background-size: cover;
+  z-index: 10;
+  transition: all 1s;
+}
+
+.home {
+  transform: translateY(-20%);
+  transition: all 1s;
+}
+
+/* MEDIA QUERIES */
+/* 1200 */
+@media (max-width: 75em) {
+  .container {
+    height: 8rem;
+  }
+}

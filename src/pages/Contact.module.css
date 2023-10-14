@@ -1,0 +1,32 @@
+.container {
+  width: 100%;
+  height: calc(100% - 10rem);
+  margin-top: 10rem;
+  background-color: var(--white);
+  background-image: url(../images/globe3.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fade-in 1s ease;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* MEDIA QUERIES */
+/* 1200 */
+@media (max-width: 75em) {
+  .container {
+    margin-top: 8rem;
+    height: calc(100% - 8rem);
+  }
+}

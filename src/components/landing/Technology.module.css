@@ -1,0 +1,175 @@
+.technology-body {
+  align-self: center;
+  justify-self: center;
+  width: 40%;
+  height: 100%;
+  margin-right: 4rem;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.single-tech-left {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  gap: 1rem;
+  margin-left: 3rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.single-tech-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  justify-self: center;
+  gap: 1rem;
+  margin-right: 3rem;
+}
+
+.technology-body--top {
+  width: 100%;
+  display: flex;
+  gap: 10rem;
+  align-self: center;
+  justify-content: center;
+}
+
+.technology-body--middle {
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.technology-body--bottom {
+  width: 100%;
+  display: flex;
+  gap: 10rem;
+  align-self: center;
+  justify-content: center;
+}
+
+.icon {
+  height: 8rem;
+  width: 8rem;
+  transition: all 0.5s;
+}
+
+.icon:hover {
+  color: #666;
+}
+
+.react-icon {
+  animation: App-logo-spin infinite 20s linear;
+}
+
+.nodejs-icon {
+  color: #3c873a;
+}
+
+.react-icon {
+  color: #61dbfb;
+}
+
+.mongodb-icon {
+  color: #3fa037;
+}
+
+.mysql-icon {
+  color: #00758f;
+}
+
+.technology-title {
+  align-self: center;
+  font-size: 2.4rem;
+  font-family: "Dosis", sans-serif;
+  letter-spacing: 0.2rem;
+  font-weight: 500;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* MEDIA QUERIES */
+/* 1500 */
+@media (max-width: 93.75em) {
+  .technology-title {
+    font-size: 2.2rem;
+  }
+}
+/* 600 */
+@media (max-width: 37.5em) {
+  .icon {
+    height: 6rem;
+    width: 6rem;
+  }
+  .single-tech-right {
+    margin-right: 1rem;
+  }
+}
+/* 550 */
+@media (max-width: 34.4em) {
+  .technology-body {
+    margin-right: 0rem;
+  }
+  .icon {
+    height: 8rem;
+    width: 8rem;
+  }
+  .single-tech-right {
+    margin-right: 0rem;
+  }
+  .single-tech-left {
+    margin-left: 0rem;
+  }
+}
+/* 450 */
+@media (max-width: 28.15em) {
+  .icon {
+    height: 6rem;
+    width: 6rem;
+  }
+}
+/* 400 */
+@media (max-width: 25em) {
+  .technology-body--top {
+    gap: 6rem;
+  }
+  .technology-body--bottom {
+    gap: 6rem;
+  }
+  .technology-body--middle {
+    height: 2rem;
+  }
+}
+/* 360 */
+@media (max-width: 22.5em) {
+  .technology-title {
+    font-size: 1.8rem;
+  }
+  .icon {
+    height: 5rem;
+    width: 5rem;
+  }
+}
+/* 300 */
+@media (max-width: 18.75em) {
+  .technology-body--top {
+    gap: 4rem;
+  }
+  .technology-body--bottom {
+    gap: 4rem;
+  }
+}

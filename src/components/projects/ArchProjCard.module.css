@@ -1,0 +1,111 @@
+.container {
+  /* height: 50rem; */
+  width: 100%;
+  display: grid;
+  grid-template-columns: 0.3fr 1fr 1.3fr;
+  background-color: #fff;
+  align-items: stretch;
+  justify-content: space-between;
+  margin: 4rem 25rem 8rem 25rem;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.right-border {
+  width: 100%;
+  background-color: var(--color-main-hover);
+  clip-path: polygon(80% 100%, 0% 100%, 0% 0%, 100% 0%);
+}
+
+/* MEDIA QUERIES */
+/* 1600 */
+@media (max-width: 100em) {
+  .container {
+    margin: 4rem 15rem;
+  }
+}
+/* 1300 */
+@media (max-width: 81.25em) {
+  .container {
+    margin: 5rem 10rem;
+  }
+}
+/* 1200 */
+@media (max-width: 75em) {
+  .container {
+    /* width: 90%; */
+    margin: 10rem 20rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.3fr 1fr 0.3fr;
+  }
+  .right-border {
+    height: 100%;
+    grid-row: 3/4;
+    clip-path: polygon(100% 100%, 0% 100%, 0% 10%, 100% 0%);
+  }
+}
+/* 1100 */
+@media (max-width: 68.75em) {
+  .container {
+    grid-template-rows: 1.3fr 1.2fr 0.3fr;
+    margin: 10rem 15rem;
+  }
+}
+/* 900 */
+@media (max-width: 56.25em) {
+  .container {
+    margin: 8rem 10rem 10rem 10rem;
+  }
+}
+/* 800 */
+@media (max-width: 50em) {
+  .container {
+    margin: 6rem 6rem 10rem 6rem;
+  }
+}
+/* 600 */
+@media (max-width: 37.5em) {
+  .container {
+    margin: 6rem 4rem 10rem 4rem;
+  }
+}
+/* 550 */
+@media (max-width: 34.4em) {
+  .container {
+    margin: 6rem 2rem 10rem 2rem;
+  }
+}
+/* 500 */
+@media (max-width: 31.25em) {
+  .container {
+    margin: 10rem 2rem 10rem 2rem;
+  }
+}
+/* 450 */
+@media (max-width: 28.15em) {
+  .container {
+    grid-template-rows: 1.3fr 1.3fr 0.3fr;
+  }
+}
+/* 400 */
+@media (max-width: 25em) {
+  .container {
+    margin: 10rem 0.4rem;
+    grid-template-rows: 1.3fr 1.4fr 0.3fr;
+  }
+}
+/* 360 */
+@media (max-width: 22.5em) {
+  .container {
+    margin: 10rem 0.4rem;
+    grid-template-rows: 1.3fr 1.6fr 0.3fr;
+  }
+}
+/* 300 */
+@media (max-width: 18.75em) {
+  .container {
+    margin: 10rem 0.4rem;
+    grid-template-rows: 1.3fr 1.8fr 0.3fr;
+  }
+}

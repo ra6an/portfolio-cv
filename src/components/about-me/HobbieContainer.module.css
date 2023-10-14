@@ -1,0 +1,32 @@
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: relative;
+}
+
+.inner-container {
+  height: 100%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  min-width: 100%;
+  transition: all 0.5s;
+  z-index: 2;
+}
+
+/* MEDIA QUERIES */
+/* 600 */
+@media (max-width: 37.5em) {
+  .inner-container {
+    gap: 1rem;
+  }
+}
+/* 450 */
+@media (max-width: 28.15em) {
+  .inner-container {
+    gap: 0.2rem;
+  }
+}

@@ -1,0 +1,108 @@
+.container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  max-width: 192rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.inner-content--container {
+  width: 100%;
+}
+
+.inner-container {
+  position: relative;
+  width: 100%;
+}
+
+.content-container {
+  top: 0;
+  width: 100%;
+}
+
+.projects-btns {
+  height: 5rem;
+  width: 40rem;
+  position: absolute;
+  bottom: 2rem;
+  right: 4rem;
+  display: flex;
+  align-self: start;
+  justify-self: start;
+  align-items: center;
+  z-index: 4;
+}
+
+.projects-btns--inner {
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+  justify-content: stretch;
+  position: relative;
+  z-index: 4;
+  border-radius: 0.4rem;
+  overflow: hidden;
+}
+
+.projects-btn {
+  position: relative;
+  background: none;
+  font-family: "Dosis", sans-serif;
+  border-radius: 0.4rem;
+  padding: 1rem 2rem;
+  height: 100%;
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+  border: none;
+  cursor: pointer;
+  z-index: 6;
+  transition: all 0.5s;
+}
+
+.btn-backgrount {
+  background-color: var(--grey);
+  top: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform: translateX(-110%);
+  z-index: 0;
+  transition: all 1s;
+}
+
+@keyframes enterRight {
+  0% {
+    transform: translateX(-110%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+/* MEDIA QUERIES */
+/* 1200 */
+@media (max-width: 75em) {
+  .projects-btns {
+    width: 16rem;
+    right: 3rem;
+    /* bottom: 4rem; */
+  }
+  .projects-btn {
+    color: #fff !important;
+    background-color: var(--grey);
+  }
+}
+/* 900 */
+@media (max-width: 56.25em) {
+  .projects-btns {
+    right: 1rem;
+  }
+}
+/* 500 */
+@media (max-width: 31.25em) {
+  .projects-btns {
+    top: 2rem;
+  }
+}

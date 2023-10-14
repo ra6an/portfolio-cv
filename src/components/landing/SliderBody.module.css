@@ -1,0 +1,68 @@
+.body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.content {
+  position: absolute;
+  height: 100%;
+  width: 300%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s;
+}
+
+.about-me {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 33.33%;
+  background-image: url(../../images/b1white.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.technology {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 33.33%;
+  background-image: url(../../images/b2white.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 33.33%;
+  background-image: url(../../images/b3white.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* MEDIA QUERIES */
+/* 550 */
+@media (max-width: 34.4em) {
+  .about-me {
+    background-image: url(../../images/b1wS.png);
+  }
+  .technology {
+    background-image: url(../../images/b2wS.png);
+  }
+  .contact {
+    background-image: url(../../images/b3wS.png);
+  }
+}

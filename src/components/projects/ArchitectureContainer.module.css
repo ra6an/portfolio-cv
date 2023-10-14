@@ -1,0 +1,117 @@
+.container {
+  width: 100%;
+  min-height: calc(100vh - 10rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  animation: fade-in 0.5s ease;
+}
+
+.background {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  left: 0;
+  height: 100%;
+  width: 40%;
+  background-image: url(../../images/architecture-fade.jpg);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: fade-in 3s ease;
+}
+
+.filter {
+  height: 100%;
+  width: 20%;
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0),
+    rgb(255, 255, 255)
+  );
+}
+
+.title {
+  margin-top: 6rem;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 6rem;
+  color: #e0e0e0;
+}
+
+.inner-container {
+  position: relative;
+  display: flex;
+  align-items: start;
+  width: 100%;
+  overflow: hidden;
+}
+
+.projects-slider {
+  position: absolute;
+  display: flex;
+  transition: all 1s;
+}
+
+.projects-slider-btns {
+  position: absolute;
+  bottom: 2rem;
+  width: 100%;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.projects-slider-btn {
+  width: 5rem;
+  height: 5rem;
+  background: none;
+  border: none;
+  color: #999;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.2rem;
+  transition: all 0.5s;
+}
+
+.projects-slider-btn:hover {
+  background-color: var(--color-main-hover);
+  color: #fff;
+}
+
+.projects-btn {
+  width: 70%;
+  height: 70%;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* MEDIA QUERIES */
+/* 1200 */
+@media (max-width: 75em) {
+  .projects-slider {
+    height: auto;
+  }
+  .inner-container {
+    align-items: start;
+  }
+  .projects-slider-btn {
+    color: var(--grey);
+  }
+  .projects-slider-btn:hover {
+    background-color: var(--grey);
+  }
+}

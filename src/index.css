@@ -1,13 +1,73 @@
+html {
+  font-size: 62.5%;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+#overlays {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+:root {
+  --white: #fff;
+  --white-t: rgb(255, 255, 255);
+  --color-main: rgb(163, 215, 193);
+  --color-main-hover: rgb(119, 180, 155);
+  --color-orange: rgb(240, 139, 40);
+  --color-orange-hover: rgb(224, 123, 22);
+  --transparent: rgba(255, 255, 255, 0);
+  --grey: rgb(44, 44, 44);
+  --grey-lighter: rgb(68, 68, 68);
+  --yellow: rgb(240, 218, 79);
+  --programming: rgba(240, 218, 79, 0.4);
+  --programming-icon: rgb(230, 205, 43);
+  --architecture: rgb(119, 180, 155, 0.4);
+  --architecture-icon: rgb(119, 180, 155);
+  --hobbie-overlay: rgba(233, 233, 233, 0.836);
+  --hobbie-overlay: rgba(255, 255, 255, 0.788);
+
+  /* LINKS */
+  --facebook: rgb(1, 101, 225);
+  --instagram: rgb(193, 53, 132);
+  --linkedin: rgb(0, 119, 181);
+  --github: black;
+
+  /* TECHNOLOGYs */
+  --javascript: rgba(240, 218, 79, 0.2);
+  --react: rgba(97, 219, 251, 0.2);
+  --react-native: rgba(97, 219, 251, 0.2);
+  --html: rgba(227, 76, 38, 0.2);
+  --css: rgba(41, 101, 241, 0.2);
+  --node-js: rgba(60, 135, 58, 0.2);
+  --mongodb: rgba(77, 179, 61, 0.2);
+  --mysql: rgba(0, 117, 143, 0.2);
+  --autocad: rgba(171, 31, 38, 0.2);
+  --archicad: rgba(36, 56, 108, 0.2);
+  --lumion: rgba(65, 116, 139, 0.2);
+  --photoshop: rgba(0, 30, 54, 0.2);
 }

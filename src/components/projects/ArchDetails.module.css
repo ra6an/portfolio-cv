@@ -1,0 +1,176 @@
+.container {
+  align-self: stretch;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  border-radius: 1rem;
+  padding: 0rem 2rem 0rem 1rem;
+  position: relative;
+}
+
+/* TITLE */
+.title-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0 0 4rem;
+  position: relative;
+}
+
+.title {
+  font-family: "Josefin Sans", sans-serif;
+  color: var(--yellow);
+  color: #333;
+  font-size: 3.2rem;
+  font-weight: 400;
+}
+
+/* OFFICE */
+.office-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0 0 4rem;
+  position: relative;
+}
+
+.office {
+  font-family: "Josefin Sans", sans-serif;
+  color: var(--yellow);
+  color: #333;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+/* TECH */
+.tech-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0 2rem 4rem;
+  position: relative;
+  color: #333;
+}
+
+.tech {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+/* URL */
+.url-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0 2rem 4rem;
+  position: relative;
+}
+
+.url {
+  text-decoration: none;
+  color: var(--yellow);
+  color: #333;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  transition: all 0.3s;
+}
+
+.url:hover {
+  color: #000000;
+}
+
+/* DESCRIPTION */
+.description-container {
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0 0 4rem;
+  position: relative;
+}
+
+.description {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.vertical-line {
+  position: absolute;
+  width: 0.2rem;
+  left: 2rem;
+  top: 0;
+  background-color: var(--color-main-hover);
+  transform: translateX(-50%);
+}
+
+.dot {
+  content: "";
+  height: 1.1rem;
+  width: 1.1rem;
+  position: absolute;
+  left: 2rem;
+  background-color: #333;
+  border: 0.4rem solid #fff;
+  border-radius: 5rem;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.number {
+  position: absolute;
+  padding: 0 1rem;
+  right: 0rem;
+  bottom: 0;
+  font-size: 3rem;
+  font-family: "Josefin Sans", sans-serif;
+  color: var(--color-main-hover);
+  transform: translate(-80%, -80%);
+  border: 0.3rem solid var(--color-main-hover);
+}
+
+/* MEDIA QUERIES */
+/* 1600 */
+@media (max-width: 100em) {
+  .tech {
+    font-size: 1.8rem;
+  }
+  .description {
+    font-size: 1.8rem;
+  }
+}
+/* 1400 */
+@media (max-width: 87.5em) {
+  .title {
+    font-size: 2.8rem;
+  }
+  .office {
+    font-size: 2rem;
+  }
+  .tech-container {
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+  }
+}
+/* 500 */
+@media (max-width: 31.25em) {
+  .container {
+    padding: 0rem 1rem 0rem 0rem;
+  }
+}
+/* 450 */
+@media (max-width: 28.15em) {
+  .number {
+    transform: translate(-50%, -50%);
+  }
+  .title {
+    font-size: 2.4rem;
+  }
+  .office {
+    font-size: 1.8rem;
+  }
+}
