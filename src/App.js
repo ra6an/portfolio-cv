@@ -101,7 +101,7 @@ function App() {
       {overlayData.active && <CertImages />}
       <div className={styles["body"]}>
         <Routes>
-          {/* <Route path="/about-me" element={<Loading />} /> */}
+          <Route path="/" element={<Loading />} />
           <Route
             path="/about-me"
             element={
