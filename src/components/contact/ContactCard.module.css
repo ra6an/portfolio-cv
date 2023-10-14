@@ -33,7 +33,7 @@
   font-weight: 600;
   text-transform: uppercase;
   font-size: 4rem;
-  align-self: start;
+  align-self: flex-start;
 }
 
 .phone {

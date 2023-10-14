@@ -1,6 +1,6 @@
 .container {
   display: flex;
-  align-items: start;
+  align-items: flex-start;
   justify-content: center;
   height: calc(100% - 10rem);
   width: 100%;
@@ -15,7 +15,7 @@
   overflow-y: scroll;
   overflow-x: hidden;
   display: flex;
-  align-items: start;
+  align-items: flex-start;
   justify-content: center;
 }
 

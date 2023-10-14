@@ -47,7 +47,7 @@
   display: flex;
   gap: 1rem;
   align-items: center;
-  justify-self: start;
+  justify-self: flex-start;
   padding: 1rem 1rem;
 }
 

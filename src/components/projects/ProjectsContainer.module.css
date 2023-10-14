@@ -29,8 +29,8 @@
   bottom: 2rem;
   right: 4rem;
   display: flex;
-  align-self: start;
-  justify-self: start;
+  align-self: flex-start;
+  justify-self: flex-start;
   align-items: center;
   z-index: 4;
 }

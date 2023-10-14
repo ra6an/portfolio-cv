@@ -38,7 +38,7 @@
 .inner-container {
   position: relative;
   display: flex;
-  align-items: start;
+  align-items: flex-start;
   width: 100%;
   overflow: hidden;
 }
@@ -140,7 +140,7 @@
     height: auto;
   }
   .inner-container {
-    align-items: start;
+    align-items: flex-start;
   }
   .background {
     background-image: none;

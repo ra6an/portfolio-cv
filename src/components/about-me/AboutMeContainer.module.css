@@ -81,7 +81,7 @@
 
 .header-architecture {
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   width: 100%;
   font-family: "Bebas Neue", sans-serif;
   font-size: 14rem;
