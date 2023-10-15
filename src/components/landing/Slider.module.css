@@ -82,54 +82,91 @@
     width: 100%;
   }
 }
+@media (max-width: 34.4em) {
+  .carousel-slider-btns {
+    bottom: 0rem;
+  }
+  .left {
+    left: 10rem;
+  }
+  .right {
+    right: 10rem;
+  }
+}
 /* 500 */
 @media (max-width: 31.25em) {
+  .carousel-slider-btns {
+    bottom: 1rem;
+  }
+
   .carousel-slider-btn {
     width: 4rem;
     height: 4rem;
-    background-color: var(--color-main-hover);
+    /* background-color: var(--color-main-hover);
     background-color: var(--white);
     background-color: #000;
     border: 0.3rem solid black;
     color: #000;
-    color: #fff;
+    color: #fff; */
   }
 
   .carousel-slider-btn:hover {
     color: #a0a0a0;
-    color: var(--color-orange);
+    color: var(--white);
   }
 
   .left {
-    left: 3rem;
+    left: 10rem;
   }
 
   .right {
-    right: 3rem;
+    right: 10rem;
   }
 }
 /* 450 */
 @media (max-width: 28.15em) {
+  .carousel-slider-btns {
+    bottom: 2rem;
+  }
+
   .left {
-    left: 2rem;
+    left: 15rem;
   }
 
   .right {
-    right: 2rem;
+    right: 15rem;
   }
 }
 /* 400 */
 @media (max-width: 25em) {
+  .carousel-slider-btns {
+    bottom: 3rem;
+  }
   .left {
-    left: 1.4rem;
+    left: 10rem;
   }
 
   .right {
-    right: 1.4rem;
+    right: 10rem;
   }
 
   .carousel-btn {
     width: 90%;
     height: 90%;
+  }
+}
+/* 360 */
+@media (max-width: 22.5em) {
+  .carousel-slider-btns {
+    bottom: 5rem;
+  }
+}
+/* 300 */
+@media (max-width: 18.5em) {
+  .left {
+    left: 5rem;
+  }
+  .right {
+    right: 5rem;
   }
 }
