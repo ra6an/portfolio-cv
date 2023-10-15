@@ -13,18 +13,35 @@
   position: absolute;
   display: flex;
   align-items: center;
-  justify-content: end;
   left: 0;
   height: 100%;
-  width: 40%;
-  background-image: url(../../images/architecture-fade.jpg);
-  background-position: left;
-  background-repeat: no-repeat;
-  background-size: cover;
+  width: 30%;
+  overflow: hidden;
   animation: fade-in 3s ease;
 }
 
+.architecture-img {
+  opacity: 0;
+  object-position: center;
+  object-fit: cover;
+  transition: all 1s ease-in;
+}
+
 .filter {
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  justify-self: end;
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0),
+    rgb(255, 255, 255)
+  );
+}
+
+/* .filter {
   height: 100%;
   width: 20%;
   background-image: linear-gradient(
@@ -33,7 +50,7 @@
     rgba(255, 255, 255, 0),
     rgb(255, 255, 255)
   );
-}
+} */
 
 .title {
   margin-top: 6rem;

@@ -7,11 +7,22 @@ import styles from "./ProgrammingContainer.module.css";
 import ProgProjectDetails from "./ProgProjectDetails";
 import ProgImage from "./ProgImage";
 
+// DATA
+import data from "../../data";
+
 const ProgrammingContainer = (props) => {
   const [curProject, setCurProject] = useState(0);
   const [init, setInit] = useState(0);
   const [projectHeight, setProjectHeight] = useState(null);
+  const [backLoad, setBackLoad] = useState(false);
   const numberOfProjects = props.data.projects.length;
+
+  useEffect(() => {
+    let timer = setTimeout(() => {
+      setProjectHeight(document.getElementById("projects-slider").offsetHeight);
+    }, 1000 * 0.5);
+    return () => clearTimeout(timer);
+  }, []);
 
   useEffect(() => {
     if (init) {
@@ -74,6 +85,7 @@ const ProgrammingContainer = (props) => {
         />
         <ProgImage
           data={{
+            imgLazy: project.details.imgLazy,
             img: project.details.img,
           }}
         />
@@ -84,9 +96,17 @@ const ProgrammingContainer = (props) => {
   return (
     <div className={styles.container}>
       <div className={styles.background}>
+        <img
+          src={data.bgImages.progBg}
+          className={styles["programming-img"]}
+          style={backLoad ? { opacity: "1" } : { opacity: "0" }}
+          alt="HTML code"
+          onLoad={() => setBackLoad(true)}
+        />
         <div className={styles.filter}></div>
       </div>
       <div
+        id="inner-container"
         className={styles["inner-container"]}
         style={{ height: `${projectHeight}px` }}
       >
@@ -96,6 +116,7 @@ const ProgrammingContainer = (props) => {
           style={{
             transform: `translateX(-${(100 / numberOfProjects) * curProject}%)`,
             width: `${numberOfProjects * 100}%`,
+            height: `${projectHeight}`,
           }}
         >
           {renderProjects}

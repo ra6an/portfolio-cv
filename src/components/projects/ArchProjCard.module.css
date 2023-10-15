@@ -91,6 +91,9 @@
 /* 400 */
 @media (max-width: 25em) {
   .container {
+    width: 100%;
+    border-radius: 0;
+    box-shadow: none;
     margin: 10rem 0.4rem;
     grid-template-rows: 1.3fr 1.4fr 0.3fr;
   }

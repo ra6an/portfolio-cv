@@ -9,7 +9,7 @@
 
 .menu-icon {
   border-radius: 50%;
-  border: 0.2rem solid var(--grey);
+  /* border: 0.2rem solid var(--grey); */
   height: 4rem;
   width: 4rem;
   padding: 0 0.4rem;

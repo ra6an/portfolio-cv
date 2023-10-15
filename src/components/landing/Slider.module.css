@@ -102,12 +102,6 @@
   .carousel-slider-btn {
     width: 4rem;
     height: 4rem;
-    /* background-color: var(--color-main-hover);
-    background-color: var(--white);
-    background-color: #000;
-    border: 0.3rem solid black;
-    color: #000;
-    color: #fff; */
   }
 
   .carousel-slider-btn:hover {

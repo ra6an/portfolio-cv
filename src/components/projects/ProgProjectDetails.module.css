@@ -2,7 +2,8 @@
   max-height: 50rem;
   width: 90%;
   padding: 10rem 2rem;
-  justify-self: end;
+  /* margin-right: 4rem; */
+  justify-self: flex-end;
   align-self: center;
   display: flex;
   flex-direction: column;
@@ -178,6 +179,7 @@
 @media (max-width: 93.75em) {
   .container {
     width: 90%;
+    margin-right: 4rem;
   }
 }
 /* 1400 */
@@ -198,9 +200,17 @@
     padding-bottom: 1rem;
   }
 }
+/* 1300 */
+@media (max-width: 81.25em) {
+  .container {
+    margin-right: 2rem;
+  }
+}
 /* 1200 */
 @media (max-width: 75em) {
   .container {
+    margin-right: 0;
+    margin-top: 2rem;
     grid-row: 2/3;
     width: 50%;
     min-height: 40rem;
@@ -218,6 +228,7 @@
   .container {
     height: 90%;
     width: 80%;
+    margin-top: 0;
   }
 }
 /* 800 */
@@ -265,7 +276,9 @@
 /* 400 */
 @media (max-width: 25em) {
   .container {
-    width: 95%;
+    width: 97%;
+    box-shadow: none;
+    border-radius: 0;
   }
   .description {
     font-size: 1.8rem;

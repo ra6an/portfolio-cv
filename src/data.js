@@ -1,3 +1,6 @@
+// BACKGROUND IMAGES
+import programmingBg from "./images/programming.jpg";
+import architectureBg from "./images/architecture-fade.jpg";
 // CERTIFICATES
 import htmlAndCssImg from "./images/certs/html-css.jpg";
 import javaScriptImg from "./images/certs/js.jpg";
@@ -10,18 +13,35 @@ import reactNativeImg from "./images/certs/reactnative.jpg";
 // HOBBIES
 import hikingImg from "./images/hiking.jpg";
 import drawingImg from "./images/drawing.jpg";
-import craftingImg from "./images/crafting-1.jpg";
+import craftingImg from "./images/crafting.jpg";
 import gamingImg from "./images/gaming.jpg";
+// HOBBIES LAZY
+import hikingLazy from "./images/hiking-lazy.jpg";
+import drawingLazy from "./images/drawing-lazy.jpg";
+import craftingLazy from "./images/crafting-lazy.jpg";
+import gamingLazy from "./images/gaming-lazy.jpg";
 // PROGRAMMING-images
 import reviveRemodeling from "./images/programming/reviveremodeling.png";
 import games from "./images/programming/games.png";
 import podstanar from "./images/programming/podstanar.png";
 import forkify from "./images/programming/forkify.png";
 import omnifood from "./images/programming/omnifood.png";
+// PROGRAMMING-images LAZY
+import reviveRemodelingLazy from "./images/programming/reviveremodeling-lazy.png";
+import gamesLazy from "./images/programming/games-lazy.png";
+import podstanarLazy from "./images/programming/podstanar-lazy.png";
+import forkifyLazy from "./images/programming/forkify-lazy.png";
+import omnifoodLazy from "./images/programming/omnifood-lazy.png";
 // ARCHITECTURE-images
-import hirsch from "./images/architecture/hirsch1.jpg";
-import hirschTwo from "./images/architecture/hirsch2.jpg";
-import hirschThree from "./images/architecture/hirsch3.jpg";
+import hirsch from "./images/architecture/hirsch.jpg";
+import nek from "./images/architecture/nek17.jpg";
+import tg from "./images/architecture/tg78.jpg";
+import house from "./images/architecture/kuca.jpg";
+// ARCHITECTURE-images LAZY
+import hirschLazy from "./images/architecture/hirsch-lazy.jpg";
+import nekLazy from "./images/architecture/nek17-lazy.jpg";
+import tgLazy from "./images/architecture/tg78-lazy.jpg";
+import houseLazy from "./images/architecture/kuca-lazy.jpg";
 
 const today = new Date(Date.now());
 const birthDay = "14-05-1995";
@@ -30,6 +50,10 @@ const myBirthDay = new Date(parse[2], parse[1], parse[0]);
 const age = today.getFullYear() - myBirthDay.getFullYear();
 
 const data = {
+  bgImages: {
+    progBg: programmingBg,
+    archBg: architectureBg,
+  },
   bio: {
     birthday: "14.05.1995",
     name: "Adnan Dacić",
@@ -62,23 +86,27 @@ const data = {
       description:
         "Hiking is a testament to our enduring connection with the natural world. It's a reminder that, despite our modern lives filled with screens and schedules, we are fundamentally creatures of the outdoors. Especially since our exploration of previously unknown territories brings us back to our childhood days and awakens the adventurous spirit.",
       img: hikingImg,
+      imgLazy: hikingLazy,
     },
     {
       title: "Drawing & Music",
       description:
         "Drawing, along with music, is a universal language that transcends cultural and linguistic barriers. Without spoken words, it allows you to connect with others, sharing stories, ideas, and emotions. It's a form of meditation, a mindful practice that brings you into the present moment.",
       img: drawingImg,
+      imgLazy: drawingLazy,
     },
     {
       title: "Crafting",
       description:
         "It's a form of therapy. Crafting provides a moment of respite from the hustle and bustle of everyday life. As you immerse yourself in your craft, the world fades into the background, and you find solace in the rhythm of your work. It's a sanctuary for the mind, a place where stress dissipates and a sense of accomplishment blossoms.",
       img: craftingImg,
+      imgLazy: craftingLazy,
     },
     {
       title: "Gaming",
       description: "If you play games as well add me on Discord ra6an#4417!",
       img: gamingImg,
+      imgLazy: gamingLazy,
     },
   ],
   architectureTech: [
@@ -166,6 +194,7 @@ const data = {
           "Revive Remodeling is a company from New York specializing in room reconstruction and remodeling. The project was done using WordPress with a few modifications using CSS and JavaScript.",
         url: "https://reviveremodelingnyc.com/",
         img: reviveRemodeling,
+        imgLazy: reviveRemodelingLazy,
       },
     },
     {
@@ -177,6 +206,7 @@ const data = {
           "Podstanar is my personal project that is still in the development process and was inspired by the Airbnb app. The ultimate goal is to simplify the rental process for both hosts and clients, reducing the number of steps taken care of by the application's logic.",
         url: "https://github.com/ra6an/PODSTANAR-in-progress",
         img: podstanar,
+        imgLazy: podstanarLazy,
       },
     },
     {
@@ -188,6 +218,7 @@ const data = {
           "Omnifood was the final project of Johnas Schmedtman's HTML and CSS course. The project's goal was to apply best practices and write clean and functional code, making the site responsive for all types of screens.",
         url: "https://omnifoodr.netlify.app/",
         img: omnifood,
+        imgLazy: omnifoodLazy,
       },
     },
     {
@@ -199,6 +230,7 @@ const data = {
           "Forkify is also a final project from Johnas Schmedtman's course, this time focused on JavaScript. It involved adding JavaScript code for the client side to an existing HTML and CSS codebase, with a primary emphasis on AJAX calls.",
         url: "https://forkifyr6.netlify.app/",
         img: forkify,
+        imgLazy: forkifyLazy,
       },
     },
     {
@@ -210,6 +242,7 @@ const data = {
           "This is my personal project where I summarized the knowledge I had gathered in HTML, CSS, and JavaScript and implemented it in the development of several mini-games.",
         url: "https://gamesr6.netlify.app/",
         img: games,
+        imgLazy: gamesLazy,
       },
     },
   ],
@@ -224,6 +257,7 @@ const data = {
           "Hirschstrasse is a duplex house in Austria, where I worked on both the conceptual design and construction projects. This involved creating blueprints, specifications, 3D models, and renderings",
         url: null,
         img: hirsch,
+        imgLazy: hirschLazy,
       },
     },
     {
@@ -235,19 +269,21 @@ const data = {
         description:
           "Tauschinskygasse is a more complex project located in Austria, where I collaborated with a group of architects on construction projects. I was involved in the creation of blueprints, specifications, 3D models, and renderings.",
         url: null,
-        img: hirschTwo,
+        img: tg,
+        imgLazy: tgLazy,
       },
     },
     {
       details: {
         id: 3,
-        title: "Dental Office",
+        title: "Nek",
         company: "Trust d.o.o",
         tech: "AutoCAD, Archicad, Lumion",
         description:
           "The dental office is located in Bosnia and Herzegovina. It was an interior design project where I worked on blueprints, specifications, 3D modeling, and renderings.",
         url: null,
-        img: hirschThree,
+        img: nek,
+        imgLazy: nekLazy,
       },
     },
     {
@@ -259,7 +295,8 @@ const data = {
         description:
           "This is my personal project where I summarized the knowledge I had gathered in HTML, CSS, and JavaScript and implemented it in the development of several mini-games.",
         url: null,
-        img: hirsch,
+        img: house,
+        imgLazy: houseLazy,
       },
     },
   ],

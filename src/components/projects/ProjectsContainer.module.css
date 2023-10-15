@@ -91,7 +91,7 @@
   }
   .projects-btn {
     color: #fff !important;
-    background-color: var(--grey);
+    background-color: var(--grey-lighter);
   }
 }
 /* 900 */
@@ -104,5 +104,12 @@
 @media (max-width: 31.25em) {
   .projects-btns {
     top: 2rem;
+  }
+}
+/* 400 */
+@media (max-width: 25em) {
+  .projects-btns {
+    right: 0.3rem;
+    top: 2.4rem;
   }
 }

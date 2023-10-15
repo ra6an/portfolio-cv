@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 
 import styles from "./HobbieCard.module.css";
 
 const HobbieCard = (props) => {
+  const [loaded, setLoaded] = useState(false);
+
   return (
     <div
       className={`${styles["container"]}`}
@@ -34,10 +36,11 @@ const HobbieCard = (props) => {
           className={styles.filter}
           style={
             props.currHobbie === props.id
-              ? { background: "none" }
+              ? { background: "none", zIndex: 0 }
               : {
                   backgroundColor: "var(--hobbie-overlay)",
                   backdropFilter: "blur(0.2rem)",
+                  zIndex: 15,
                 }
           }
         />
@@ -49,8 +52,17 @@ const HobbieCard = (props) => {
           <img
             alt={props.data.img}
             src={props.data.img}
+            onLoad={() => {
+              setLoaded(true);
+            }}
             className={styles["img"]}
+            style={loaded ? { opacity: "1" } : { opacity: "0" }}
             loading="lazy"
+          />
+          <img
+            alt={props.data.imgLazy}
+            src={props.data.imgLazy}
+            className={styles["img-lazy"]}
           />
         </div>
       </div>

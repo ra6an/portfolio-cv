@@ -6,10 +6,14 @@ import styles from "./ArchitectureContainer.module.css";
 // COMPONENTS
 import ArchProjCard from "./ArchProjCard";
 
+// DATA
+import data from "../../data";
+
 const ArchitectureContainer = (props) => {
   const [curProject, setCurProject] = useState(0);
   const [init, setInit] = useState(0);
   const [projectHeight, setProjectHeight] = useState(null);
+  const [backLoad, setBackLoad] = useState(false);
   const numOfProjects = props.data.projects.length;
 
   useEffect(() => {
@@ -70,6 +74,13 @@ const ArchitectureContainer = (props) => {
   return (
     <div className={styles.container}>
       <div className={styles.background}>
+        <img
+          src={data.bgImages.archBg}
+          className={styles["architecture-img"]}
+          style={backLoad ? { opacity: "1" } : { opacity: "0" }}
+          alt="Architecture project"
+          onLoad={() => setBackLoad(true)}
+        />
         <div className={styles.filter}></div>
       </div>
       <div
