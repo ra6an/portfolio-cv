@@ -16,7 +16,9 @@
   border-radius: 50%;
   border: 0.2rem solid black;
   padding: 0.4rem;
+  opacity: 0;
   margin-bottom: 2rem;
+  transition: opacity 0.5s ease-in;
 }
 
 .btn {

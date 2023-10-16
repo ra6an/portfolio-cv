@@ -57,6 +57,7 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  position: relative;
 }
 
 .img {
@@ -76,6 +77,8 @@
 .img-lazy {
   position: absolute;
   width: 30rem;
+  object-position: center;
+  object-fit: cover;
   height: auto;
   filter: blur(6px);
 }
@@ -97,6 +100,10 @@
     width: auto;
     height: 32rem;
   }
+  .img-lazy {
+    width: auto;
+    height: 32rem;
+  }
 }
 /* 1000 */
 @media (max-width: 62.5em) {
@@ -108,6 +115,9 @@
     min-width: 30rem;
   }
   .img {
+    width: 30rem;
+  }
+  .img-lazy {
     width: 30rem;
   }
   .hobbie-content {
@@ -141,6 +151,10 @@
     max-height: 26rem;
   }
   .img {
+    width: 100%;
+    height: auto;
+  }
+  .img-lazy {
     width: 100%;
     height: auto;
   }

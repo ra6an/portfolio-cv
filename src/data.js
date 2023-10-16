@@ -2,6 +2,7 @@
 import programmingBg from "./images/programming.jpg";
 import architectureBg from "./images/architecture-fade.jpg";
 // CERTIFICATES
+import certLazy from "./images/certs/cert-lazy.jpg";
 import htmlAndCssImg from "./images/certs/html-css.jpg";
 import javaScriptImg from "./images/certs/js.jpg";
 import javaScriptTwoImg from "./images/certs/js2.jpg";
@@ -132,18 +133,29 @@ const data = {
     },
   ],
   programmingTech: [
-    { title: "HTML", cert: [htmlAndCssImg], color: "html" },
-    { title: "CSS", cert: [htmlAndCssImg], color: "css" },
+    { title: "HTML", cert: [htmlAndCssImg], color: "html", certLazy },
+    { title: "CSS", cert: [htmlAndCssImg], color: "css", certLazy },
     {
       title: "JavaScript",
       cert: [javaScriptImg, javaScriptTwoImg],
       color: "javascript",
+      certLazy,
     },
-    { title: "React", cert: [reactImg], color: "react" },
-    { title: "ReactNative", cert: [reactNativeImg], color: "react-native" },
-    { title: "NodeJS", cert: [nodeJSImg, nodeJSTwoImg], color: "node-js" },
-    { title: "MongoDB", cert: [nodeJSTwoImg], color: "mongodb" },
-    { title: "MySQL", cert: [mySQLImg], color: "mysql" },
+    { title: "React", cert: [reactImg], color: "react", certLazy },
+    {
+      title: "ReactNative",
+      cert: [reactNativeImg],
+      color: "react-native",
+      certLazy,
+    },
+    {
+      title: "NodeJS",
+      cert: [nodeJSImg, nodeJSTwoImg],
+      color: "node-js",
+      certLazy,
+    },
+    { title: "MongoDB", cert: [nodeJSTwoImg], color: "mongodb", certLazy },
+    { title: "MySQL", cert: [mySQLImg], color: "mysql", certLazy },
   ],
   architectureJobs: [
     {
