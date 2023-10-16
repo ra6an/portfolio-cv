@@ -91,6 +91,18 @@
     gap: 1rem;
   }
 }
+/* 716 */
+@media (max-width: 44.75em) {
+  .text {
+    padding-bottom: 2rem;
+  }
+}
+/* 650 */
+@media (max-width: 37.5em) {
+  .text {
+    padding-bottom: 1rem;
+  }
+}
 /* 550 */
 @media (max-width: 34.4em) {
   .about-me-body {
@@ -108,6 +120,9 @@
 @media (max-width: 28.15em) {
   .image {
     display: none;
+  }
+  .text {
+    padding-bottom: 0;
   }
 }
 /* 360 */

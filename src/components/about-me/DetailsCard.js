@@ -46,7 +46,7 @@ const DetailsCard = (props) => {
           }}
         />
         <h3 className={`${styles["title"]} ${styles["experiance"]}`}>
-          -Experiance-
+          -Experience-
         </h3>
         <Jobs
           className={styles["jobs"]}

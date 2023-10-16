@@ -40,6 +40,7 @@
   flex-direction: column;
   list-style: none;
   margin-top: 3rem;
+  padding: 0 2rem;
   z-index: 3;
 }
 
@@ -148,5 +149,8 @@
 @media (max-width: 18.75em) {
   .text {
     font-size: 1.4rem;
+  }
+  .details {
+    padding: 0 1rem;
   }
 }

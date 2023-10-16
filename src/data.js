@@ -38,11 +38,13 @@ import hirsch from "./images/architecture/hirsch.jpg";
 import nek from "./images/architecture/nek17.jpg";
 import tg from "./images/architecture/tg78.jpg";
 import house from "./images/architecture/kuca.jpg";
+import nova from "./images/architecture/nova-dental.jpg";
 // ARCHITECTURE-images LAZY
 import hirschLazy from "./images/architecture/hirsch-lazy.jpg";
 import nekLazy from "./images/architecture/nek17-lazy.jpg";
 import tgLazy from "./images/architecture/tg78-lazy.jpg";
 import houseLazy from "./images/architecture/kuca-lazy.jpg";
+import novaLazy from "./images/architecture/nova-dental-lazy.jpg";
 
 const today = new Date(Date.now());
 const birthDay = "14-05-1995";
@@ -58,28 +60,26 @@ const data = {
   bio: {
     birthday: "14.05.1995",
     name: "Adnan Dacić",
-    school: "Srednja Građevinso-Geodetska",
+    school: "High School of Civil Engineering and Geodesy",
     location: "BiH, Sarajevo",
     email: "adnandacic145@gmail.com",
     phone: "061/053-653",
     mbti: "INTP - a",
   },
   homeQuotes: [
-    `I'm Adnan Dacić, a ${age}-year-old junior full-stack developer hailing
+    `Hey there, web wanderer! I'm Adnan Dacić, a ${age}-year-old junior full-stack developer hailing
     from Bosnia and Herzegovina. Welcome to my webpage, where
     I'm excited to share my journey and insights in the world of web
     development.`,
   ],
   contactQuote: [
-    `If you like my work, have a question, suggestion, or just want to say
-  hello? I'd love to hear from you! You can contact me on one of links
-  provided below.`,
+    `If you like my work, have questions, suggestions, or simply want to say hello, I'd love to hear from you! You can reach out to me through one of the links provided below.`,
   ],
   aboutMeQoute: {
-    main: `I'm Adnan Dacić, a ${age}-year-old Bosnian guy who's been on quite the
+    main: `I'm Adnan Dacić, a ${age}-year-old Bosnian enthusiast who's been on quite the
     adventure. Welcome to my website, where you can get to know me better, along with my previous work in both architecture and programming.`,
     architecture: `After completing high school, I enrolled in the architectural faculty. During my studies, I began working as an architect, acquiring numerous valuable skills. Realizing the client's dreams while simultaneously staying grounded in reality, attempting to find a balance between the two, and designing something both unique and functional is a challenging task for which I am grateful. It has helped me think outside the box and strengthen my problem-solving skills. Although I am a fan of challenging architectural endeavors and the artistic aspects it offers, I came across cybersecurity courses that introduced me to an entirely new virtual world. This realm provides complete freedom and is far more challenging than architecture.`,
-    programming: `After taking my initial steps in the virtual world, I realized that the only limits that exist are the boundaries of knowledge one possesses. In the beginning, it felt like standing at a crossroads with infinite possibilities, making it challenging to decide which path to take. This led to my first encounter with web development. I believed that if I wanted to learn website hacking/pentesting, I had to first understand how to code them. After some exploration and advice from friends, I decided to start with the holy trinity of web development: HTML, CSS, and JS. Of course, after mastering the basics of the holy trinity, I faced a new crossroads where I opted for the MERN stack. I began learning React, NodeJS, Mongo, MySQL, and React Native. After three and a half years of learning and developing small personal projects, I decided to seek employment to enhance my knowledge in an environment where individuals have dedicated many more years to programming. This way, I aim to learn best practices and code development`,
+    programming: `After taking my initial steps in the virtual world, I realized that the only limits that exist are the boundaries of knowledge one possesses. In the beginning, it felt like standing at a crossroads with infinite possibilities, making it challenging to decide which path to take. This led to my first encounter with web development. I believed that if I wanted to learn website hacking/pentesting, I had to first understand how to code them. After some exploration and advice from friends, I decided to start with the holy trinity of web development: HTML, CSS, and JS. Of course, after mastering the basics of the holy trinity, I faced a new crossroads where I opted for the MERN stack. I began learning React, NodeJS, Mongo, MySQL, and React Native. After three and a half years of learning and developing small personal projects, I decided to seek employment to enhance my knowledge in an environment where individuals have dedicated many more years to programming. This way, I aim to learn best practices and code development.`,
   },
   hobbies: [
     {
@@ -165,7 +165,7 @@ const data = {
       tech: "AutoCAD, Archicad, Lumion",
       type: "Remote",
       description:
-        "That's my longest journey in architecture where i worked on bigger projects, for which I am grateful for the experiences shared with me. I have worked on both conceptual design and construction projects, from blueprints and specifications to developing 3D models and renderings.",
+        "My architectural journey reached its peak during this phase as I delved into larger projects, an experience for which I'm truly grateful. Working on these projects allowed me to learn and grow through the invaluable experiences shared with me. I have worked on both conceptual design and construction projects, from blueprints and specifications to developing 3D models and renderings.",
     },
     {
       id: 1,
@@ -174,7 +174,7 @@ const data = {
       tech: "AutoCAD, Archicad, Lumion",
       type: "On-site",
       description:
-        "It was a short ride because of COVID, but nonetheless, very rich with experience. I worked on interior design where I was more involved in direct communication with the client. I also worked on creating blueprints, specifications, 3D models, and renderings.",
+        "My journey in this role was relatively short due to the impact of COVID, but nonetheless, very rich with experience. During this time, I was primarily engaged in interior design, allowing me to foster direct communication with clients. I also played a pivotal role in creating blueprints, specifications, 3D models, and intricate renderings.",
     },
     {
       id: 2,
@@ -262,7 +262,7 @@ const data = {
     {
       details: {
         id: 1,
-        title: "Hirschstrasse",
+        title: "Hirschstraße",
         company: "AD-Arch",
         tech: "AutoCAD, Archicad, Lumion",
         description:
@@ -279,7 +279,7 @@ const data = {
         company: "AD-Arch",
         tech: "AutoCAD, Archicad, Lumion",
         description:
-          "Tauschinskygasse is a more complex project located in Austria, where I collaborated with a group of architects on construction projects. I was involved in the creation of blueprints, specifications, 3D models, and renderings.",
+          "Tauschinskygasse is duplex house in Austria, where I was involved in both conceptual design and construction projects. I was working on creation of the blueprints, specifications, 3D models, and renderings.",
         url: null,
         img: tg,
         imgLazy: tgLazy,
@@ -288,11 +288,11 @@ const data = {
     {
       details: {
         id: 3,
-        title: "Nek",
+        title: "Nekowitsch-Straße",
         company: "Trust d.o.o",
         tech: "AutoCAD, Archicad, Lumion",
         description:
-          "The dental office is located in Bosnia and Herzegovina. It was an interior design project where I worked on blueprints, specifications, 3D modeling, and renderings.",
+          "Nekowitsch is project where I collaborated with group of architects on construction projects. I was working on creation of the blueprints, specifications, 3D models, and renderings.",
         url: null,
         img: nek,
         imgLazy: nekLazy,
@@ -301,11 +301,24 @@ const data = {
     {
       details: {
         id: 4,
-        title: "Home 1",
+        title: "Nova Dental",
+        company: "Trust d.o.o",
+        tech: "AutoCAD, Archicad, Lumion",
+        description:
+          "The Nova Dental clinic is located in Bosnia and Herzegovina. It was an interior design project where I worked on blueprints, specifications, 3D modeling, and renderings.",
+        url: null,
+        img: nova,
+        imgLazy: novaLazy,
+      },
+    },
+    {
+      details: {
+        id: 5,
+        title: "House Renovation",
         company: "Freelance",
         tech: "AutoCAD, Archicad, Lumion, Photoshop",
         description:
-          "This is my personal project where I summarized the knowledge I had gathered in HTML, CSS, and JavaScript and implemented it in the development of several mini-games.",
+          "This is my personal project where I was working on blueprints, specifications, 3D modeling, and renderings for House Renovation located in Bosnia and Herzegovina.",
         url: null,
         img: house,
         imgLazy: houseLazy,
