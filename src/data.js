@@ -27,12 +27,20 @@ import games from "./images/programming/games.png";
 import podstanar from "./images/programming/podstanar.png";
 import forkify from "./images/programming/forkify.png";
 import omnifood from "./images/programming/omnifood.png";
+import natours from "./images/programming/natours.png";
+import todo from "./images/programming/todo.png";
+import restaurant from "./images/programming/restaurant.png";
+import zgz from "./images/programming/zgz.png";
 // PROGRAMMING-images LAZY
 import reviveRemodelingLazy from "./images/programming/reviveremodeling-lazy.png";
 import gamesLazy from "./images/programming/games-lazy.png";
 import podstanarLazy from "./images/programming/podstanar-lazy.png";
 import forkifyLazy from "./images/programming/forkify-lazy.png";
 import omnifoodLazy from "./images/programming/omnifood-lazy.png";
+import natoursLazy from "./images/programming/natours-lazy.png";
+import todoLazy from "./images/programming/todo-lazy.png";
+import restaurantLazy from "./images/programming/restaurant-lazy.png";
+import zgzLazy from "./images/programming/zgz-lazy.png";
 // ARCHITECTURE-images
 import hirsch from "./images/architecture/hirsch.jpg";
 import nek from "./images/architecture/nek17.jpg";
@@ -248,6 +256,54 @@ const data = {
     {
       details: {
         id: 5,
+        title: "Natours",
+        tech: "NodeJS, MongoDB, Pug, CSS",
+        description:
+          "Natours is final project from Jonas Schmedtman's course mostly focused on NodeJS and MongoDB. I was implementing authentification/authorization and basic CRUD operations.",
+        url: "https://github.com/ra6an/Natours",
+        img: natours,
+        imgLazy: natoursLazy,
+      },
+    },
+    {
+      details: {
+        id: 6,
+        title: "React Meals",
+        tech: "React, Css",
+        description:
+          "React Meals is one of the projects from Maximilian Schwarzmüller's React course, with the goal of implementing AJAX calls.",
+        url: "https://github.com/ra6an/restaurant-react",
+        img: restaurant,
+        imgLazy: restaurantLazy,
+      },
+    },
+    {
+      details: {
+        id: 7,
+        title: "The To-do List",
+        tech: "React, Redux, Css",
+        description:
+          "The to-do list is my side project after completing a React course. I wanted to delve into React Hooks and Redux for further exploration.",
+        url: "https://github.com/ra6an/TODO",
+        img: todo,
+        imgLazy: todoLazy,
+      },
+    },
+    {
+      details: {
+        id: 8,
+        title: "ZGZ Forum",
+        tech: "React, NodeJS, Express, MongoDB",
+        description:
+          "ZGZ Forum is my personal project where, after completing Maximilian's MERN course, I decided to create a website to test my knowledge.",
+        url: "https://github.com/ra6an/zgz-dit",
+        img: zgz,
+        imgLazy: zgzLazy,
+      },
+    },
+    {
+      details: {
+        id: 9,
         title: "Games",
         tech: "HTML5, CSS3, JavaScript",
         description:
