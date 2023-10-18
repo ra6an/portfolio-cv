@@ -168,7 +168,7 @@ const data = {
   architectureJobs: [
     {
       id: 0,
-      company: "AD-Arch",
+      company: "Architekt DI Admir Dedic ZT",
       months: 24,
       tech: "AutoCAD, Archicad, Lumion",
       type: "Remote",
@@ -318,8 +318,8 @@ const data = {
     {
       details: {
         id: 1,
-        title: "Hirschstraße",
-        company: "AD-Arch",
+        title: "Hirschstettnerstrasse 13, 1220 Vienna",
+        company: "Architekt DI Admir Dedic ZT",
         tech: "AutoCAD, Archicad, Lumion",
         description:
           "Hirschstrasse is a duplex house in Austria, where I worked on both the conceptual design and construction projects. This involved creating blueprints, specifications, 3D models, and renderings",
@@ -331,8 +331,8 @@ const data = {
     {
       details: {
         id: 2,
-        title: "Tauschinskygasse",
-        company: "AD-Arch",
+        title: "Tauschinskygasse 78, 1210 Vienna",
+        company: "Architekt DI Admir Dedic ZT",
         tech: "AutoCAD, Archicad, Lumion",
         description:
           "Tauschinskygasse is duplex house in Austria, where I was involved in both conceptual design and construction projects. I was working on creation of the blueprints, specifications, 3D models, and renderings.",
@@ -344,8 +344,8 @@ const data = {
     {
       details: {
         id: 3,
-        title: "Nekowitsch-Straße",
-        company: "Trust d.o.o",
+        title: "Dr.-Nekowitsch Str. 17, 1210 Vienna",
+        company: "Architekt DI Admir Dedic ZT",
         tech: "AutoCAD, Archicad, Lumion",
         description:
           "Nekowitsch is project where I collaborated with group of architects on construction projects. I was working on creation of the blueprints, specifications, 3D models, and renderings.",
