@@ -22,6 +22,8 @@ import drawingLazy from "./images/drawing-lazy.jpg";
 import craftingLazy from "./images/crafting-lazy.jpg";
 import gamingLazy from "./images/gaming-lazy.jpg";
 // PROGRAMMING-images
+import sgi from "./images/programming/sgi.png";
+import candavero from "./images/programming/candavero.png";
 import reviveRemodeling from "./images/programming/reviveremodeling.png";
 import games from "./images/programming/games.png";
 import podstanar from "./images/programming/podstanar.png";
@@ -32,6 +34,8 @@ import todo from "./images/programming/todo.png";
 import restaurant from "./images/programming/restaurant.png";
 import zgz from "./images/programming/zgz.png";
 // PROGRAMMING-images LAZY
+import sgiLazy from "./images/programming/sgi-lazy.png";
+import candaveroLazy from "./images/programming/candavero-lazy.png";
 import reviveRemodelingLazy from "./images/programming/reviveremodeling-lazy.png";
 import gamesLazy from "./images/programming/games-lazy.png";
 import podstanarLazy from "./images/programming/podstanar-lazy.png";
@@ -198,16 +202,40 @@ const data = {
     {
       id: 0,
       company: "Freelance",
-      months: 2,
-      tech: "Wordpress, CSS, JavaScript",
+      months: 12,
+      tech: "Wordpress, CSS, HTML, React, NodeJS, Express, MongoDB, MySQL, JavaScript",
       type: "Remote",
-      description: `Since I dedicated the past four years to learning web development, I've recently entered the world of real projects. Currently, I have one project under my belt, involving a company from New York called Revive Remodeling. You can find more details on the "Projects" page.`,
+      description: `I have worked on several projects over the past year, including one for a New York-based company called Revive Remodeling, as well as a wine shop Wein Candavero and a dropshipping website SGI, which is still in development. You can find more details on the 'Projects' page.`,
     },
   ],
   programmingProjects: [
     {
       details: {
         id: 1,
+        title: "SGI - Schweizer Gratis Inserate",
+        tech: "MERN",
+        description:
+          "Schweizer Gratis Inserate is a Swiss company. The project is still in development and utilizes React, Node.js with Express, and MongoDB with Mongoose as the tech stack.",
+        url: "https://schweizer-gratis-inserate.ch/",
+        img: sgi,
+        imgLazy: sgiLazy,
+      },
+    },
+    {
+      details: {
+        id: 2,
+        title: "Wein Candavero",
+        tech: "React, NodeJS, Express, MySQL",
+        description:
+          "Wein Candavero is a privately-run wine shop website, redesigned and rebuilt from scratch using React, Node.js with Express, and MySQL. The site offers a modern and intuitive platform for customers to browse and purchase a curated selection of wines.",
+        url: "https://db.candavero.de/",
+        img: candavero,
+        imgLazy: candaveroLazy,
+      },
+    },
+    {
+      details: {
+        id: 3,
         title: "Revive Remodeling",
         tech: "Wordpress, CSS, JavaScript",
         description:
@@ -219,7 +247,7 @@ const data = {
     },
     {
       details: {
-        id: 2,
+        id: 4,
         title: "Podstanar",
         tech: "React, NodeJS, MongoDB",
         description:
@@ -231,7 +259,7 @@ const data = {
     },
     {
       details: {
-        id: 3,
+        id: 5,
         title: "Omnifood",
         tech: "HTML5, CSS3, JavaScript",
         description:
@@ -243,7 +271,7 @@ const data = {
     },
     {
       details: {
-        id: 4,
+        id: 6,
         title: "Forkify",
         tech: "JavaScript",
         description:
@@ -255,7 +283,7 @@ const data = {
     },
     {
       details: {
-        id: 5,
+        id: 7,
         title: "Natours",
         tech: "NodeJS, MongoDB, Pug, CSS",
         description:
@@ -267,7 +295,7 @@ const data = {
     },
     {
       details: {
-        id: 6,
+        id: 8,
         title: "React Meals",
         tech: "React, Css",
         description:
@@ -279,7 +307,7 @@ const data = {
     },
     {
       details: {
-        id: 7,
+        id: 9,
         title: "The To-do List",
         tech: "React, Redux, Css",
         description:
@@ -291,7 +319,7 @@ const data = {
     },
     {
       details: {
-        id: 8,
+        id: 10,
         title: "ZGZ Forum",
         tech: "React, NodeJS, Express, MongoDB",
         description:
@@ -303,7 +331,7 @@ const data = {
     },
     {
       details: {
-        id: 9,
+        id: 11,
         title: "Games",
         tech: "HTML5, CSS3, JavaScript",
         description:
