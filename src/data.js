@@ -33,6 +33,7 @@ import natours from "./images/programming/natours.png";
 import todo from "./images/programming/todo.png";
 import restaurant from "./images/programming/restaurant.png";
 import zgz from "./images/programming/zgz.png";
+import wordle from "./images/programming/wordle.png";
 // PROGRAMMING-images LAZY
 import sgiLazy from "./images/programming/sgi-lazy.png";
 import candaveroLazy from "./images/programming/candavero-lazy.png";
@@ -45,6 +46,7 @@ import natoursLazy from "./images/programming/natours-lazy.png";
 import todoLazy from "./images/programming/todo-lazy.png";
 import restaurantLazy from "./images/programming/restaurant-lazy.png";
 import zgzLazy from "./images/programming/zgz-lazy.png";
+import wordleLazy from "./images/programming/world-lazy.png";
 // ARCHITECTURE-images
 import hirsch from "./images/architecture/hirsch.jpg";
 import nek from "./images/architecture/nek17.jpg";
@@ -236,6 +238,18 @@ const data = {
     {
       details: {
         id: 3,
+        title: "Wordle",
+        tech: "React, SCSS",
+        description:
+          "This Wordle-inspired application is a word puzzle game developed using React and SCSS. The project replicates the popular word-guessing gameplay, offering a smooth and interactive user experience.",
+        url: "https://wordle-ra6an.netlify.app/",
+        img: wordle,
+        imgLazy: wordleLazy,
+      },
+    },
+    {
+      details: {
+        id: 4,
         title: "Revive Remodeling",
         tech: "Wordpress, CSS, JavaScript",
         description:
@@ -247,7 +261,7 @@ const data = {
     },
     {
       details: {
-        id: 4,
+        id: 5,
         title: "Podstanar",
         tech: "React, NodeJS, MongoDB",
         description:
@@ -259,7 +273,7 @@ const data = {
     },
     {
       details: {
-        id: 5,
+        id: 6,
         title: "Omnifood",
         tech: "HTML5, CSS3, JavaScript",
         description:
@@ -271,7 +285,7 @@ const data = {
     },
     {
       details: {
-        id: 6,
+        id: 7,
         title: "Forkify",
         tech: "JavaScript",
         description:
@@ -283,7 +297,7 @@ const data = {
     },
     {
       details: {
-        id: 7,
+        id: 8,
         title: "Natours",
         tech: "NodeJS, MongoDB, Pug, CSS",
         description:
@@ -295,7 +309,7 @@ const data = {
     },
     {
       details: {
-        id: 8,
+        id: 9,
         title: "React Meals",
         tech: "React, Css",
         description:
@@ -305,18 +319,18 @@ const data = {
         imgLazy: restaurantLazy,
       },
     },
-    {
-      details: {
-        id: 9,
-        title: "The To-do List",
-        tech: "React, Redux, Css",
-        description:
-          "The to-do list is my side project after completing a React course. I wanted to delve into React Hooks and Redux for further exploration.",
-        url: "https://github.com/ra6an/TODO",
-        img: todo,
-        imgLazy: todoLazy,
-      },
-    },
+    // {
+    //   details: {
+    //     id: 9,
+    //     title: "The To-do List",
+    //     tech: "React, Redux, Css",
+    //     description:
+    //       "The to-do list is my side project after completing a React course. I wanted to delve into React Hooks and Redux for further exploration.",
+    //     url: "https://github.com/ra6an/TODO",
+    //     img: todo,
+    //     imgLazy: todoLazy,
+    //   },
+    // },
     {
       details: {
         id: 10,
