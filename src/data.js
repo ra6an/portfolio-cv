@@ -46,7 +46,7 @@ import natoursLazy from "./images/programming/natours-lazy.png";
 import todoLazy from "./images/programming/todo-lazy.png";
 import restaurantLazy from "./images/programming/restaurant-lazy.png";
 import zgzLazy from "./images/programming/zgz-lazy.png";
-import wordleLazy from "./images/programming/world-lazy.png";
+import wordleLazy from "./images/programming/wordle-lazy.png";
 // ARCHITECTURE-images
 import hirsch from "./images/architecture/hirsch.jpg";
 import nek from "./images/architecture/nek17.jpg";
