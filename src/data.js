@@ -232,7 +232,7 @@ const data = {
         tech: "React, Java (Spring Boot), PostgreSQL",
         description:
           "Hive5 is my personal project. It's a social media API designed for seamless user interaction, allowing people to connect, share, and engage in a dynamic online community.",
-        url: "https://github.com/ra6an/hive5",
+        url: "https://hive5.netlify.app",
         img: hive5,
         imgLazy: hive5Lazy,
       },
