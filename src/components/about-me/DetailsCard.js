@@ -70,6 +70,7 @@ const DetailsCard = (props) => {
           <div
             onClick={setCurrentProjectHandler}
             className={styles["redirect-btn"]}
+            style={{ borderColor: `var(--${props.data.title})` }}
           >
             <p
               style={

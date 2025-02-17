@@ -70,8 +70,11 @@ code {
   --html: rgba(227, 76, 38, 0.2);
   --css: rgba(41, 101, 241, 0.2);
   --node-js: rgba(60, 135, 58, 0.2);
+  --java: rgba(0, 115, 150, 0.2);
   --mongodb: rgba(77, 179, 61, 0.2);
   --mysql: rgba(0, 117, 143, 0.2);
+  --postgresql: rgba(0, 99, 165, 0.2);
+  --csharp: rgba(56, 1, 144, 0.2);
   --autocad: rgba(171, 31, 38, 0.2);
   --archicad: rgba(36, 56, 108, 0.2);
   --lumion: rgba(65, 116, 139, 0.2);

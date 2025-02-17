@@ -34,6 +34,7 @@ import todo from "./images/programming/todo.png";
 import restaurant from "./images/programming/restaurant.png";
 import zgz from "./images/programming/zgz.png";
 import wordle from "./images/programming/wordle.png";
+import hive5 from "./images/programming/hive5.png";
 // PROGRAMMING-images LAZY
 import sgiLazy from "./images/programming/sgi-lazy.png";
 import candaveroLazy from "./images/programming/candavero-lazy.png";
@@ -47,6 +48,7 @@ import todoLazy from "./images/programming/todo-lazy.png";
 import restaurantLazy from "./images/programming/restaurant-lazy.png";
 import zgzLazy from "./images/programming/zgz-lazy.png";
 import wordleLazy from "./images/programming/wordle-lazy.png";
+import hive5Lazy from "./images/programming/hive5-lazy.png";
 // ARCHITECTURE-images
 import hirsch from "./images/architecture/hirsch.jpg";
 import nek from "./images/architecture/nek17.jpg";
@@ -157,10 +159,8 @@ const data = {
     },
     { title: "React", cert: [reactImg], color: "react", certLazy },
     {
-      title: "ReactNative",
-      cert: [reactNativeImg],
-      color: "react-native",
-      certLazy,
+      title: "Java",
+      color: "java",
     },
     {
       title: "NodeJS",
@@ -168,8 +168,22 @@ const data = {
       color: "node-js",
       certLazy,
     },
+    {
+      title: "C#",
+      color: "csharp",
+    },
     { title: "MongoDB", cert: [nodeJSTwoImg], color: "mongodb", certLazy },
     { title: "MySQL", cert: [mySQLImg], color: "mysql", certLazy },
+    {
+      title: "PostgeSQL",
+      color: "postgresql",
+    },
+    // {
+    //   title: "ReactNative",
+    //   cert: [reactNativeImg],
+    //   color: "react-native",
+    //   certLazy,
+    // },
   ],
   architectureJobs: [
     {
@@ -211,6 +225,18 @@ const data = {
     },
   ],
   programmingProjects: [
+    {
+      details: {
+        id: 0,
+        title: "Hive5",
+        tech: "React, Java (Spring Boot), PostgreSQL",
+        description:
+          "Hive5 is my personal project. It's a social media API designed for seamless user interaction, allowing people to connect, share, and engage in a dynamic online community.",
+        url: "https://github.com/ra6an/hive5",
+        img: hive5,
+        imgLazy: hive5Lazy,
+      },
+    },
     {
       details: {
         id: 1,
