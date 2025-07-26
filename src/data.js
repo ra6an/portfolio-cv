@@ -228,30 +228,6 @@ const data = {
     {
       details: {
         id: 0,
-        title: "Hive5",
-        tech: "React, Java (Spring Boot), PostgreSQL",
-        description:
-          "Hive5 is my personal project. It's a social media API designed for seamless user interaction, allowing people to connect, share, and engage in a dynamic online community.",
-        url: "https://hive5.netlify.app",
-        img: hive5,
-        imgLazy: hive5Lazy,
-      },
-    },
-    {
-      details: {
-        id: 1,
-        title: "SGI - Schweizer Gratis Inserate",
-        tech: "MERN",
-        description:
-          "Schweizer Gratis Inserate is a Swiss company. The project is still in development and utilizes React, Node.js with Express, and MongoDB with Mongoose as the tech stack.",
-        url: "https://schweizer-gratis-inserate.ch/",
-        img: sgi,
-        imgLazy: sgiLazy,
-      },
-    },
-    {
-      details: {
-        id: 2,
         title: "Wein Candavero",
         tech: "React, NodeJS, Express, MySQL",
         description:
@@ -263,19 +239,7 @@ const data = {
     },
     {
       details: {
-        id: 3,
-        title: "Wordle",
-        tech: "React, SCSS",
-        description:
-          "This Wordle-inspired application is a word puzzle game developed using React and SCSS. The project replicates the popular word-guessing gameplay, offering a smooth and interactive user experience.",
-        url: "https://wordle-ra6an.netlify.app/",
-        img: wordle,
-        imgLazy: wordleLazy,
-      },
-    },
-    {
-      details: {
-        id: 4,
+        id: 1,
         title: "Revive Remodeling",
         tech: "Wordpress, CSS, JavaScript",
         description:
@@ -285,6 +249,44 @@ const data = {
         imgLazy: reviveRemodelingLazy,
       },
     },
+    {
+      details: {
+        id: 2,
+        title: "SGI - Schweizer Gratis Inserate",
+        tech: "MERN",
+        description:
+          "Schweizer Gratis Inserate is a Swiss company. The project is still in development and utilizes React, Node.js with Express, and MongoDB with Mongoose as the tech stack.",
+        url: "https://schweizer-gratis-inserate.ch/",
+        img: sgi,
+        imgLazy: sgiLazy,
+      },
+    },
+    {
+      details: {
+        id: 3,
+        title: "Hive5",
+        tech: "React, Java (Spring Boot), PostgreSQL",
+        description:
+          "Hive5 is my personal project. It's a social media API designed for seamless user interaction, allowing people to connect, share, and engage in a dynamic online community.",
+        url: "https://hive5.netlify.app",
+        img: hive5,
+        imgLazy: hive5Lazy,
+      },
+    },
+    
+    {
+      details: {
+        id: 4,
+        title: "Wordle",
+        tech: "React, SCSS",
+        description:
+          "This Wordle-inspired application is a word puzzle game developed using React and SCSS. The project replicates the popular word-guessing gameplay, offering a smooth and interactive user experience.",
+        url: "https://wordle-ra6an.netlify.app/",
+        img: wordle,
+        imgLazy: wordleLazy,
+      },
+    },
+    
     {
       details: {
         id: 5,
